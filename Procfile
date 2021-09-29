@@ -1,1 +1,1 @@
-Web: unicorn wigs:app
+web: gunicorn wsgi:app
