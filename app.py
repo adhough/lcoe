@@ -1,13 +1,9 @@
 import pandas as pd
 import numpy_financial as npf
-'from matplotlib.figure import Figure
-'from matplotlib import mlab
-'import matplotlib.dates
+
 from datetime import date
 
-'from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
-'from matplotlib import style
 pd.core.common.is_list_like = pd.api.types.is_list_like
 import pandas_datareader as web
 from scipy.stats import norm
@@ -19,8 +15,7 @@ from config import Config
 from flask_bootstrap import Bootstrap
 import jinja2
 from io import BytesIO
-'import matplotlib.dates as mdates
-'from matplotlib.dates import DateFormatter
+
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 import warnings
