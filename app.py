@@ -70,8 +70,8 @@ def render_search_response(gen_json:bool=False) -> str:
         # Output and PV
     
     df["YearlyOutput"] =ElectGen
-    df["PVOutput"]= -np.pv(rate=DiscRate, nper=df.index, pmt=0, fv=df["YearlyOutput"] )
-    df["PVOutputDisc20"]= -np.pv(rate=DiscRate*1.2, nper=df.index, pmt=0, fv=df["YearlyOutput"] )
+    df["PVOutput"]= -npf.pv(rate=DiscRate, nper=df.index, pmt=0, fv=df["YearlyOutput"] )
+    df["PVOutputDisc20"]= -npf.pv(rate=DiscRate*1.2, nper=df.index, pmt=0, fv=df["YearlyOutput"] )
 
         
         # Round the values
