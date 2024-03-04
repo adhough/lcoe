@@ -16,8 +16,7 @@ from flask_bootstrap import Bootstrap
 import jinja2
 from io import BytesIO
 
-from pandas.plotting import register_matplotlib_converters
-register_matplotlib_converters()
+
 import warnings
 import os
 from flask import send_from_directory
